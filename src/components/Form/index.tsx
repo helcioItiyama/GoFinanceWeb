@@ -22,10 +22,6 @@ const Form: React.FC<IFormProps> = ({
   onHandleSubmit,
   incomeEdit,
 }) => {
-  const today = useMemo(() => {
-    return dayMonthYearFormat(new Date().toString());
-  }, []);
-
   const editDate = useMemo(() => {
     if (incomeEdit?.date) {
       return yearMonthDayFormat(incomeEdit.date);
