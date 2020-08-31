@@ -31,7 +31,6 @@ export const incomeUnformat = (value: string): number => {
 };
 
 export const yearMonthDayFormat = (value: string): string => {
-  const [date, hour] = value.split('T');
-  hour;
-  return date;
+  const date = value.split('T');
+  return date[0];
 };
