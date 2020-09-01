@@ -82,6 +82,10 @@ export const Container = styled.div<ContainerProps>`
     }
   }
 
+  @media(min-width: 375px) {
+   width: 330px;
+  }
+
   @media(min-width: 425px) {
     width: 380px;
   }

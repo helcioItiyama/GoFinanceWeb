@@ -15,10 +15,11 @@ export const Container = styled.div<ContainerProps>`
 
   section {
     width: 100%;
-    max-width: 700px;
+    padding: 10px;
+    max-width: 768px;
 
     h1 {
-      margin-top: 40px;
+      margin-top: 60px;
       margin-bottom: 20px;
       text-transform: uppercase;
       text-align: center;
@@ -98,10 +99,20 @@ export const Container = styled.div<ContainerProps>`
         }
       }
     }
+  }
 
-    @media (min-width: 768px) {
-      max-width: 770px;
+  @media(min-width: 375px) {
+    section {
+      padding: 20px;
 
+      h1 {
+        margin-top: 80px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    section {
       h1 {
         margin-top: 80px;
         margin-bottom: 40px;
@@ -127,15 +138,16 @@ export const Container = styled.div<ContainerProps>`
             width: 300px;
             height: 40px;
             padding: 0 20px;
-            font-size: 20px;
+            font-size: 16px;
 
             &::placeholder {
-              font-size: 20px;
+              font-size: 16px;
             }
           }
         }
         button {
-          padding: 10px 116px;
+          width: 300px;
+          height: 40px;
           margin-bottom: 20px;
           font-size: 18px;
         }
@@ -146,18 +158,31 @@ export const Container = styled.div<ContainerProps>`
         }
       }
     }
+  }
 
-    @media (min-width: 1024px) {
-      width: 600px;
-
-    }
-
-    @media (min-width: 1440px) {
-      width: 800px;
+  @media (min-width: 1024px) {
+    section {
+      max-width: 500px;
 
       h1 {
-        margin-top: 100px;
-        margin-bottom: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      img {
+        margin: 30px auto;
+      }
+    }
+
+  }
+
+  @media (min-width: 1440px) {
+    section {
+      max-width: 700px;
+
+      h1 {
+        margin-top: 40px;
+        margin-bottom: 30px;
         font-size: 50px;
       }
 
@@ -166,7 +191,8 @@ export const Container = styled.div<ContainerProps>`
       }
 
       img {
-        margin: 60px auto;
+        width: 400px;
+        margin: 30px auto;
       }
 
       form {
@@ -190,7 +216,8 @@ export const Container = styled.div<ContainerProps>`
         }
 
         button {
-          padding: 14px 149px;
+          width: 400px;
+          height: 55px;
           margin-bottom: 20px;
           font-size: 26px;
         }

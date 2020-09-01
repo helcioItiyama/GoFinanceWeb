@@ -13,11 +13,12 @@ export const Container = styled.div<ContainerProps>`
   align-items: stretch;
 
   section {
+    padding: 10px;
     width: 100%;
-    max-width: 700px;
+    max-width: 768px;
 
     h1 {
-      margin-top: 40px;
+      margin-top: 60px;
       margin-bottom: 20px;
       text-transform: uppercase;
       text-align: center;
@@ -34,7 +35,7 @@ export const Container = styled.div<ContainerProps>`
     img {
       display: block;
       width: 300px;
-      margin: 20px auto;
+      margin: 30px auto;
     }
 
     form {
@@ -92,64 +93,82 @@ export const Container = styled.div<ContainerProps>`
         }
       }
     }
+  }
 
-    @media (min-width: 768px) {
-      max-width: 770px;
+  @media(min-width: 375px) {
+    section {
+      padding: 20px;
 
       h1 {
         margin-top: 80px;
-        margin-bottom: 40px;
       }
+    }
+  }
 
-      h2 {
+  @media (min-width: 768px) {
+    margin: 0 auto;
+
+    h1 {
+      margin-top: 80px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    img {
+      margin: 40px auto;
+    }
+
+    form {
+      h3 {
         font-size: 30px;
+        margin-bottom: 30px;
       }
 
-      img {
-        margin: 40px auto;
-      }
+      label {
+        margin-bottom: 20px;
+        input {
+          width: 300px;
+          height: 40px;
+          padding: 0 20px;
+          font-size: 20px;
 
-      form {
-        h3 {
-          font-size: 30px;
-          margin-bottom: 30px;
-        }
-
-        label {
-          margin-bottom: 20px;
-          input {
-            width: 300px;
-            height: 40px;
-            padding: 0 20px;
+          &::placeholder {
             font-size: 20px;
-
-            &::placeholder {
-              font-size: 20px;
-            }
           }
         }
-        button {
-          padding: 10px 129px;
-          margin-bottom: 20px;
-          font-size: 18px;
-        }
+      }
+      button {
+        padding: 10px 129px;
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
 
-        a {
-          font-size: 16px;
-          letter-spacing: 1px;
-        }
+      a {
+        font-size: 16px;
+        letter-spacing: 1px;
       }
     }
+  }
 
-    @media (min-width: 1024px) {
-      width: 600px;
-    }
-
-    @media (min-width: 1440px) {
-      width: 800px;
+  @media (min-width: 1024px) {
+    section{
+      max-width: 500px;
 
       h1 {
-        margin-top: 100px;
+        margin-top: 40px;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    section {
+      max-width: 700px;
+
+      h1 {
+        margin-top: 60px;
         margin-bottom: 40px;
         font-size: 50px;
       }
@@ -159,7 +178,8 @@ export const Container = styled.div<ContainerProps>`
       }
 
       img {
-        margin: 60px auto;
+        width: 400px;
+        margin: 40px auto;
       }
 
       form {

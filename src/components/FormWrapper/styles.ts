@@ -14,8 +14,10 @@ export const Container = styled.div`
 
       select {
         width: 100%;
-        height: 36px;
+        height: 46px;
         padding: 0 6px;
+        font-size: 18px;
+        margin-top: 4px;
       }
     }
 
@@ -24,13 +26,16 @@ export const Container = styled.div`
 
       input{
         width: 100%;
-        height: 36px;
+        height: 46px;
+        font-size: 18px;
+        margin-top: 4px;
       }
     }
 
     button {
       width: 100%;
-      height: 36px;
+      height: 46px;
+      font-size: 18px;
       margin-top: 10px;
       background-color: #10c0c6;
 

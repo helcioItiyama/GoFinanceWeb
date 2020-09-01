@@ -6,7 +6,7 @@ export const Container = styled.div`
 
   h1 {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   @media(min-width:  768px) {
@@ -94,13 +94,13 @@ export const Modal = styled.div`
 
         input {
           width: 100%;
-          height: 30px;
+          height: 46px;
           margin-top: 4px;
           padding: 0 20px;
         }
         select {
           width: 100%;
-          height: 30px;
+          height: 46px;
           margin-top: 4px;
         }
       }
@@ -108,7 +108,7 @@ export const Modal = styled.div`
       button {
         position: relative;
         width: 100%;
-        height: 35px;
+        height: 46px;
         font-size: 16px;
         font-weight: bold;
         background: ${darken(0.2, '#10c0c6')};
@@ -119,6 +119,12 @@ export const Modal = styled.div`
           background: ${darken(0.3, '#10c0c6')};
         }
       }
+    }
+  }
+
+  @media(min-width: 375px) {
+    > section {
+      width: 340px;
     }
   }
 
