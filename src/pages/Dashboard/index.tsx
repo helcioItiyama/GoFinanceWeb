@@ -115,7 +115,7 @@ const Dashboard: React.FC = () => {
         toast.success('Investimento cancelado com sucesso!');
       } catch (err) {
         toast.error(
-          'Não foi possível deletar o investimento. Por favor, tente novamente.',
+          'Não foi possível deletar o investimento. Verifique se a data não está no futuro e tente novamente.',
         );
       }
     },
@@ -149,7 +149,7 @@ const Dashboard: React.FC = () => {
         toast.success('Investimento editado com sucesso!');
       } catch (err) {
         toast.error(
-          'Não foi possível editar o investimento. Por favor, tente novamente.',
+          'Não foi possível editar o investimento. Verifique se a data não está no futuro, tente novamente.',
         );
       }
     },

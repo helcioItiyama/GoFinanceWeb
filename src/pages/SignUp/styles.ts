@@ -168,13 +168,24 @@ export const Container = styled.div<ContainerProps>`
       h1 {
         margin-top: 20px;
         margin-bottom: 20px;
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 28px;
       }
 
       img {
-        margin: 30px auto;
+        margin: 20px auto;
+      }
+
+      form {
+        h3 {
+          font-size: 28px;
+          margin-bottom: 20px;
+        }
       }
     }
-
   }
 
   @media (min-width: 1440px) {
@@ -182,51 +193,11 @@ export const Container = styled.div<ContainerProps>`
       max-width: 700px;
 
       h1 {
-        margin-top: 30px;
-        margin-bottom: 20px;
-        font-size: 50px;
-      }
-
-      h2 {
-        font-size: 40px;
+        margin-top: 60px;
       }
 
       img {
-        width: 400px;
-        margin: 20px auto;
-      }
-
-      form {
-        h3 {
-          font-size: 45px;
-          margin-bottom: 20px;
-        }
-
-        label {
-          margin-bottom: 25px;
-          input {
-            width: 400px;
-            height: 55px;
-            padding: 0 20px;
-            font-size: 26px;
-
-            &::placeholder {
-              font-size: 26px;
-            }
-          }
-        }
-
-        button {
-          width: 400px;
-          height: 55px;
-          margin-bottom: 20px;
-          font-size: 26px;
-        }
-
-        a {
-          font-size: 22px;
-          letter-spacing: 1px;
-        }
+        margin: 50px auto;
       }
     }
   }

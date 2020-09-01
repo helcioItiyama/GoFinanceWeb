@@ -121,5 +121,11 @@ export const Container = styled.div`
   @media(min-width: 1440px) {
     form {
       padding: 20px 80px;
+
+      label {
+        width: 300px;
+        font-size: 16px;
+      }
+    }
   }
 `;

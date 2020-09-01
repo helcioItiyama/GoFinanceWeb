@@ -72,7 +72,8 @@ export const Container = styled.div<ContainerProps>`
       }
 
       button {
-        padding: 8px 83px;
+        width: 200px;
+        height: 30px;
         margin-bottom: 10px;
         background: #10c0c6;
         border-radius: 4px;
@@ -133,15 +134,16 @@ export const Container = styled.div<ContainerProps>`
           width: 300px;
           height: 40px;
           padding: 0 20px;
-          font-size: 20px;
+          font-size: 16px;
 
           &::placeholder {
-            font-size: 20px;
+            font-size: 16px;
           }
         }
       }
       button {
-        padding: 10px 129px;
+        width: 300px;
+        height: 40px;
         margin-bottom: 20px;
         font-size: 18px;
       }
