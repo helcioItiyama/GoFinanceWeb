@@ -78,7 +78,8 @@ export const Container = styled.div<ContainerProps>`
       }
 
       button {
-        padding: 8px 73px;
+        width: 200px;
+        height: 30px;
         margin-bottom: 10px;
         background: #10c0c6;
         border-radius: 4px;
@@ -181,8 +182,8 @@ export const Container = styled.div<ContainerProps>`
       max-width: 700px;
 
       h1 {
-        margin-top: 40px;
-        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 20px;
         font-size: 50px;
       }
 
@@ -192,13 +193,13 @@ export const Container = styled.div<ContainerProps>`
 
       img {
         width: 400px;
-        margin: 30px auto;
+        margin: 20px auto;
       }
 
       form {
         h3 {
           font-size: 45px;
-          margin-bottom: 40px;
+          margin-bottom: 20px;
         }
 
         label {

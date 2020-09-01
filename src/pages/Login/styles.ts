@@ -203,7 +203,8 @@ export const Container = styled.div<ContainerProps>`
         }
 
         button {
-          padding: 14px 169px;
+          width: 400px;
+          height: 55px;
           margin-bottom: 20px;
           font-size: 26px;
         }
