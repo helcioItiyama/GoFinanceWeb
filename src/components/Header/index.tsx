@@ -8,19 +8,22 @@ const Header: React.FC = () => {
   const { user, logout } = useAuth();
   return (
     <Container>
-      <div>
-      <img src={logoImg} alt="GoFinance" />
+      <section>
+        <div>
+          <img src={logoImg} alt="GoFinance" />
 
-        <h2>
-          Bem-vindo(a),
-          <strong>{user?.name}</strong>
-        </h2>
-      </div>
+          <h2>
+            Bem-vindo(a),
+            <strong>{user?.name}</strong>
+          </h2>
+        </div>
 
         <button type="button" onClick={logout}>
           <RiLogoutCircleRFill size={20} />
           logout
         </button>
+
+      </section>
     </Container>
   );
 };

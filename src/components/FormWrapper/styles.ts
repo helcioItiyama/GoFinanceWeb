@@ -118,12 +118,14 @@ export const Container = styled.div`
     }
   }
 
-  @media(min-width: 1300px) {
+  @media(min-width: 1055px) {
     form {
-      padding: 20px 80px;
+      width: 995px;
+      padding: 0;
+      margin: 0 auto;
 
       label {
-        width: 300px;
+        width: 230px;
         font-size: 16px;
 
         &:first-child {
@@ -146,4 +148,6 @@ export const Container = styled.div`
       }
     }
   }
+
+
 `;

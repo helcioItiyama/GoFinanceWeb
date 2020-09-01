@@ -13,6 +13,7 @@ export const Container = styled.div`
     > div {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
     }
 
     h1 {
@@ -20,18 +21,11 @@ export const Container = styled.div`
     }
   }
 
-  @media(min-width:  1024px) {
-    h1 {
-      margin-bottom: 10px;
-    }
-  }
-
-  @media(min-width:  1440px) {
+  @media(min-width:  1055px) {
     > div {
-      max-width: 1300px;
+      width: 995px;
       margin: 0 auto;
     }
-
     h1 {
       margin-bottom: 10px;
     }

@@ -99,8 +99,8 @@ export const Container = styled.div<ContainerProps>`
     width: 380px;
   }
 
-  @media(min-width: 1440px) {
-    width: 500px;
-    margin: 40px auto;
+  @media(min-width: 1055px) {
+    width: 460px;
+    margin: 40px 0;
   }
 `;
