@@ -87,7 +87,7 @@ export const Container = styled.div`
       padding: 20px 60px;
 
       label {
-        width: 200px;
+        width: 220px;
         font-size: 16px;
 
         &:first-child {
@@ -118,13 +118,31 @@ export const Container = styled.div`
     }
   }
 
-  @media(min-width: 1440px) {
+  @media(min-width: 1300px) {
     form {
       padding: 20px 80px;
 
       label {
         width: 300px;
         font-size: 16px;
+
+        &:first-child {
+          height: 52px;
+
+            select {
+              width: 100%;
+              height: 30px;
+              font-size: 14px;
+              margin-top: 2px;
+            }
+        }
+
+        input {
+          width: 100%;
+          height: 30px;
+          font-size: 14px;
+          margin-top: 2px;
+        }
       }
     }
   }
