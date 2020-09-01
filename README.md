@@ -15,7 +15,7 @@
 Control all your investments in one place. In this portfolio investment organizer it is possible to insert your applications separated by fixed-income and variable-income. You can analyze a chart to see the percentage of your investments.
 
 <p align="center">
-    <img alt ="homepage" src="https://"/>
+    <img alt ="homepage" src="https://github.com/helcioItiyama/GoFinanceWeb/blob/master/src/assets/demo.gif"/>
 </p>
 
 ## :computer: TECHNOLOGIES USED FOR THIS PROJECT:
