@@ -52,8 +52,8 @@ export const Container = styled.div<ContainerProps>`
       label {
         margin-bottom: 10px;
         input {
-          width: 200px;
-          height: 30px;
+          width: 280px;
+          height: 46px;
           padding: 0 10px;
           border-radius: 4px;
           border: ${props => (props.nameError ? '3px solid #c83349' : 'none')};
@@ -78,8 +78,8 @@ export const Container = styled.div<ContainerProps>`
       }
 
       button {
-        width: 200px;
-        height: 30px;
+        width: 280px;
+        height: 46px;
         margin-bottom: 10px;
         background: #10c0c6;
         border-radius: 4px;
@@ -183,6 +183,19 @@ export const Container = styled.div<ContainerProps>`
         h3 {
           font-size: 28px;
           margin-bottom: 20px;
+        }
+
+        label {
+          margin-bottom: 25px;
+          input {
+            width: 300px;
+            height: 36px;
+          }
+        }
+
+        button {
+          width: 300px;
+          height: 36px;
         }
       }
     }

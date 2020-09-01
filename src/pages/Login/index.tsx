@@ -81,7 +81,7 @@ const Login: React.FC = () => {
             <input
               type="password"
               id="password"
-              placeholder="Digite a sua senha"
+              placeholder="Digite sua senha"
               onChange={e => setPassword(e.target.value)}
             />
           </label>
