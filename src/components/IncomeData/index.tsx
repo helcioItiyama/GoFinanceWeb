@@ -22,9 +22,6 @@ const IncomeData: React.FC<IIncomeProps> = ({
   onHandleDelete,
   onHandleEdit,
 }) => {
-
-  console.log(type)
-
   return (
     <Container color={title}>
       <header>
