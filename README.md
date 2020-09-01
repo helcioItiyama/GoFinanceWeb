@@ -37,7 +37,7 @@ To clone and run this application, you'll need NodeJS and Yarn.
 
 First install the backend of this application following the instructions here:
 
-GoFinance-Backend: https://github.com/helcioItiyama/GoFinance
+GoFinance-Backend: https://github.com/helcioItiyama/GoFinanceApi
 
 You just need to run the following commands:
 
