@@ -36,11 +36,11 @@ const Chart: React.FC<IChartProps> = ({ fixIncome, variableIncome }) => {
 
     const fixValuePercentage = parseFloat(
       ((totalFixIncomeAmount / totalWalletAmount) * 100).toFixed(1),
-    );
+    ) || 0;
 
     const variableValuePercentage = parseFloat(
       ((totalVariableIncomeAmount / totalWalletAmount) * 100).toFixed(1),
-    );
+    ) || 0;
 
     setFixIncomePercentage(fixValuePercentage);
     setVariableIncomePercentage(variableValuePercentage);
@@ -68,7 +68,7 @@ const Chart: React.FC<IChartProps> = ({ fixIncome, variableIncome }) => {
   return (
     <Container>
       <h2>Resumo da Carteira</h2>
-      
+
       <div>
         <Doughnut
           data={chartData}

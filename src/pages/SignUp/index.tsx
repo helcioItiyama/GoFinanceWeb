@@ -12,7 +12,7 @@ interface IErrorMessage {
 }
 
 const SignUp: React.FC = () => {
-  const [name, setName] = useState('')
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [nameError, setNameError] = useState('');
@@ -47,7 +47,7 @@ const SignUp: React.FC = () => {
 
         toast.success('Cadastro efetuado com sucesso. Você já pode realizar o seu login!')
 
-        history.push('/dashboard');
+        history.push('/');
       } catch (err) {
         err.inner.forEach((error: IErrorMessage) => {
           switch (error.path) {
