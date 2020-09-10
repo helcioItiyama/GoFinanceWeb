@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { toast } from 'react-toastify';
 import { IoMdCloseCircle } from 'react-icons/io';
 import { Container, Modal } from './styles';
@@ -8,6 +8,7 @@ import Form from '../../components/Form';
 import Chart from '../../components/Chart';
 import Header from '../../components/Header';
 import IncomeData from '../../components/IncomeData';
+import { useOnClickOutside } from '../../hooks/useOnClickOutside';
 
 import api from '../../services/api';
 
@@ -35,6 +36,8 @@ interface IAccumulator {
 }
 
 const Dashboard: React.FC = () => {
+  const modalRef = useRef<HTMLFormElement>(null);
+
   const [data, setData] = useState<IIncomeData[]>([]);
   const [fixIncome, setFixIncome] = useState<IFormattedIncomeData[]>([]);
   const [variableIncome, setVariableIncome] = useState<IFormattedIncomeData[]>(
@@ -92,7 +95,10 @@ const Dashboard: React.FC = () => {
           value: incomeUnformat(value),
           date: new Date(date).getTime(),
         });
-        setData([...data, response.data]);
+
+        let newData = [...data, response.data];
+
+        setData(newData);
 
         toast.success('Investimento cadastrado com sucesso!');
       } catch (err) {
@@ -169,6 +175,8 @@ const Dashboard: React.FC = () => {
     setIsModal(false);
   }, []);
 
+  useOnClickOutside(modalRef, () => isModal && setIsModal(false));
+
   return (
     <>
       <Header />
@@ -201,7 +209,7 @@ const Dashboard: React.FC = () => {
 
       {isModal && (
         <Modal>
-          <section>
+          <section ref={modalRef}>
             <button type="button" onClick={handleCloseModal}>
               <IoMdCloseCircle />
             </button>

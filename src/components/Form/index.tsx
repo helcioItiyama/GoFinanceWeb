@@ -12,7 +12,7 @@ interface IData {
 
 interface IFormProps {
   buttonDescription: string;
-  onHandleSubmit(event: React.FormEvent<HTMLFormElement>, data: IData): void;
+  onHandleSubmit(event: React.FormEvent<HTMLElement>, data: IData): void;
   incomeEdit?: IData;
 }
 
@@ -30,7 +30,7 @@ const Form: React.FC<IFormProps> = ({
 
   const editValue = useMemo(() => {
     if (incomeEdit?.value) {
-      return incomeEdit?.value.toString().replace('.', ',');
+      return incomeEdit.value.toString().replace('.', ',');
     }
     return null;
   }, [incomeEdit]);
