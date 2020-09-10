@@ -98,6 +98,8 @@ const Dashboard: React.FC = () => {
 
         let newData = [...data, response.data];
 
+        newData.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
+
         setData(newData);
 
         toast.success('Investimento cadastrado com sucesso!');
@@ -147,6 +149,8 @@ const Dashboard: React.FC = () => {
           const index = data.findIndex(income => income.id === incomeEdit.id);
 
           data[index] = updateIncome;
+
+          data.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
 
           setData([...data]);
           setIsModal(false);
